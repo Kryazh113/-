@@ -6,7 +6,17 @@ body {
     color: #000000;
     min-width: 1440px;
     background-color: #FFFDF8;
+    margin: 0 auto;
   }
+
+.page-header {
+    width: 1100px;
+    margin: 0 auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .wrapper {
     width: 1110px;
@@ -41,4 +51,68 @@ body {
 
 .wysiwyg-wrapper li {
     margin-bottom: 8px;
+}
+
+
+.page-header_logo {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    grid-template-rows: 70% 30%;
+    column-gap: 18px;
+}
+
+.page-header_image{
+    width: 42px;
+    height: 47px;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+.page-header_name {
+    color: #9F7303;
+    letter-spacing: 1.8px;
+    padding: 5px;
+}
+
+.page-header_text {
+    color: #000;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 13.5px;
+}
+
+.nav-button {
+    color: #000;
+    text-decoration: none;
+    padding: 6px 11px;
+}
+
+.nav-button:not(:last-child) {
+    margin-right: 18px;
+}
+
+.nav-button_border {
+    border-radius: 8px;
+    border: 1px solid #9F7303;
+}
+.nav-button_border:hover {
+    background-color:#FFFDF8;
+}
+.nav-button_border:active {
+    background-color: #FFF7E3;;
+}
+
+.nav-button_list {
+    border: none;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+/* Секция с отывами */
+
+.order {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #F4EFE2;
 }
