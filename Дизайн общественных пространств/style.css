@@ -9,7 +9,13 @@ body {
     margin: 0 auto;
   }
 
-.page-header {
+  .page-header {
+    background-color: #FFFFFF;
+    width: 100%;
+    border-bottom: 1px solid #F5D581;;
+  }
+
+.page-header-wrapper {
     width: 1100px;
     margin: 0 auto;
     height: 75px;
@@ -54,7 +60,7 @@ body {
 }
 
 
-.page-header_logo {
+.page-header-wrapper-logo {
     text-decoration: none;
     display: grid;
     grid-template-columns: 42px 1fr;
@@ -62,20 +68,20 @@ body {
     column-gap: 18px;
 }
 
-.page-header_image{
+.page-header-wrapper-image{
     width: 42px;
     height: 47px;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 }
 
-.page-header_name {
+.page-header-wrapper-name {
     color: #9F7303;
     letter-spacing: 1.8px;
     padding: 5px;
 }
 
-.page-header_text {
+.page-header-wrapper-text {
     color: #000;
     font-size: 9px;
     font-weight: 300;
@@ -111,8 +117,67 @@ body {
 
 /* Секция с отывами */
 
-.order {
+.review{
+    width: 100%;
+    background-color: #F4EFE2;
+}
+
+.review-wrapper {
     width: 1100px;
     margin: 0 auto;
-    background-color: #F4EFE2;
+}
+
+.review-wrapper-form {
+    padding-top: 81px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #F5D581;;
+}
+
+.review-wrapper-form-title {
+    color:#9F7303;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.review-wrapper-form-textarea,
+.review-wrapper-form-input {
+    width: 1110px;
+    height: 160px;
+    border-radius: 8px;
+    border: 1px solid #F5D581;
+    background-color: #FFFFFF;
+    margin-bottom: 24px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.review-wrapper-form-input {
+    width: 540px;
+    height: 64px;
+}
+
+.review-wrapper-form-button {
+    min-width: 285px;
+    min-height: 64px;
+    border-radius: 8px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #9F7303;
+    font-weight: 500;
+    line-height: 27px;
+    border: none;
+    padding: 0;
+    margin-right: 16px;
+}
+
+.review-wrapper-form-message {
+    width: 225px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: text-top;
 }

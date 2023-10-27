@@ -10,24 +10,26 @@
 </head>
 <body>
     <header class="page-header">
-        <a class="page-header_logo" href="#">
-            <img class="page-header_image" src="/img/Logo.svg" alt="INTERIOR LOUNGE ">
-            <span class="page-header_name">INTERIOR LOUNGE</span>
-            <span class="page-header_text">Дизайн общественных пространств</span>
-        </a>
-        <nav class="navigation">
-            <a href=# class="nav-button">
-                Наши проекты
-                <button class="nav-button_list" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="9" viewBox="0 0 13 9" fill="none">
-                        <path d="M7.31068 7.87752C6.91152 8.4302 6.08848 8.4302 5.68932 7.87752L1.14508 1.58549C0.667451 0.924163 1.13999 8.31609e-08 1.95576 1.18441e-08L11.0442 -7.82697e-07C11.86 -8.54014e-07 12.3325 0.924163 11.8549 1.58549L7.31068 7.87752Z" fill="#F5D581"/>
-                    </svg>
-                </button>
-
+        <div class="page-header-wrapper">
+            <a class="page-header-wrapper-logo" href="#">
+                <img class="page-header-wrapper-image" src="/img/Logo.svg" alt="INTERIOR LOUNGE ">
+                <span class="page-header-wrapper-name">INTERIOR LOUNGE</span>
+                <span class="page-header-wrapper-text">Дизайн общественных пространств</span>
             </a>
-            <a href=# class="nav-button">Контакты</a>
-            <a href=# class="nav-button nav-button_border">Оставить отзыв</a>
-        </nav>
+            <nav class="navigation">
+                <a href=# class="nav-button">
+                    Наши проекты
+                    <button class="nav-button_list" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="9" viewBox="0 0 13 9" fill="none">
+                            <path d="M7.31068 7.87752C6.91152 8.4302 6.08848 8.4302 5.68932 7.87752L1.14508 1.58549C0.667451 0.924163 1.13999 8.31609e-08 1.95576 1.18441e-08L11.0442 -7.82697e-07C11.86 -8.54014e-07 12.3325 0.924163 11.8549 1.58549L7.31068 7.87752Z" fill="#F5D581"/>
+                        </svg>
+                    </button>
+    
+                </a>
+                <a href=# class="nav-button">Контакты</a>
+                <a href=# class="nav-button nav-button_border">Оставить отзыв</a>
+            </nav>
+        </div>
     </header>
 
     <main class="page-main">
@@ -70,38 +72,40 @@
             </div>
         </section>
 
-        <section class="order">
-            <div class="order-wrapper">
-                <form>
-                    <h3>Оставить отзыв</h3>
-                    <textarea name="text" required>Очень самобытно</textarea>
-                    <input type="text"
+        <section class="review">
+            <div class="review-wrapper">
+                <form class="review-wrapper-form">
+                    <h3 class="review-wrapper-form-title">Оставить отзыв</h3>
+                    <textarea class="review-wrapper-form-textarea" name="text" required placeholder="Расскажите, что вы думаете о проекте"></textarea>
+                    <br>
+                    <input class="review-wrapper-form-input" type="text"
                     name="name" placeholder="Ваше имя" required>
-                    <button type="submit">Отправить</button>
-                    <p>Отзыв будет добавлен после проверки модератором</p>
+                    <br>
+                    <button class="review-wrapper-form-button" type="submit">Отправить</button>
+                    <span class="review-wrapper-form-message">Отзыв будет добавлен после <br>проверки модератором</span>
                 </form>
             </div>
-            <div class="reviews-wrapper">
-               <ul class="reviews-list">
-                    <li class="reviews-item">
-                        <div class="reviews-item-content">
-                            <img class="reviews-item-content-avatar">
-                            <span class="reviews-item-content-userName">Иван Грачев</span>
-                            <p class="reviews-item-content-text">Очень самобытный и необычный проект.</p>
+            <div class="review-wrapper">
+               <ul class="review-wrapper-list">
+                    <li class="review-wrapper-item">
+                        <div class="review-item-content">
+                            <img class="review-item-content-avatar">
+                            <span class="review-item-content-userName">Иван Грачев</span>
+                            <p class="review-item-content-text">Очень самобытный и необычный проект.</p>
                         </div>
                     </li>
-                    <li class="reviews-item">
-                        <div class="reviews-item-content">
-                            <img class="reviews-item-content-avatar">
-                            <span class="reviews-item-content-userName">Мария Рачинская</span>
-                            <p class="reviews-item-content-text">Мне особенно понравилось решение лестничных клеток. Кружки вообще очень стильные!</p>
+                    <li class="review-wrapper-item">
+                        <div class="review-wrapper-item-content">
+                            <img class="review-item-content-avatar">
+                            <span class="review-item-content-userName">Мария Рачинская</span>
+                            <p class="review-item-content-text">Мне особенно понравилось решение лестничных клеток. Кружки вообще очень стильные!</p>
                         </div>
                     </li>
-                    <li class="reviews-item">
-                        <div class="reviews-item-content">
-                            <img class="reviews-item-content-avatar">
-                            <span class="reviews-item-content-userName">Светлана</span>
-                            <p class="reviews-item-content-text">Очень нравится, что в городе развиваются такие проекты. Надеюсь, такие проекты скоро будут не только в частных домах, но и в кафе, музеях, театрах. Я бы сходила!</p>
+                    <li class="review-wrapper-item">
+                        <div class="review-wrapper-item-content">
+                            <img class="review-wrapper-item-content-avatar">
+                            <span class="review-wrapper-item-content-userName">Светлана</span>
+                            <p class="review-wrapper-item-content-text">Очень нравится, что в городе развиваются такие проекты. Надеюсь, такие проекты скоро будут не только в частных домах, но и в кафе, музеях, театрах. Я бы сходила!</p>
                         </div>
                     </li>
                </ul>
