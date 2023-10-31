@@ -147,12 +147,6 @@ body {
     background-color: #FFF7E3;;
 }
 
-.nav-button_list {
-    border: none;
-    background-color: #FFFFFF;
-    padding: 0;
-}
-
 /* Секция с отывами */
 
 .review{
@@ -242,11 +236,15 @@ body {
 }
 
 .review-wrapper-item-content-avatar {
-    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     background-color: #9F7303;
     border-radius: 50%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    text-indent: -100vw;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .review-wrapper-item-content-userName {
