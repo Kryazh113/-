@@ -58,18 +58,40 @@
 
 
         <section class="review">
-            <div class="review-wrapper">
-                <form class="review-wrapper-form">
-                    <h3 class="review-wrapper-form-title">Оставить отзыв</h3>
-                    <textarea class="review-wrapper-form-textarea" name="text" required placeholder="Расскажите, что вы думаете о проекте"></textarea>
-                    <br>
-                    <input class="review-wrapper-form-input" type="text"
-                    name="name" placeholder="Ваше имя" required>
-                    <br>
-                    <button class="review-wrapper-form-button" type="submit">Отправить</button>
-                    <span class="review-wrapper-form-message">Отзыв будет добавлен после <br>проверки модератором</span>
-                </form>
+            <div class="review-wrapper-form">
+                <h3 class="review-form-title">Оставить отзыв</h3>
+                <div class="review-form">
+                    <!-- Отсюда код будет удален и заменен на код вставки плагина -->
+                    <div class="wpcf7">
+                    <!-- обертка с классом, которую создаcт плагин -->            
+                        <form action="" class="wpcf7-form">   
+                            <!-- обертка с классом, которую создаcт плагин --> 
+                            <p>
+                                <span class="wpcf7-form-control-wrap">
+                                    <textarea class="wpcf7-text wpcf7-textarea" name="text" required placeholder="Расскажите, что вы думаете о проекте"></textarea>
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <input class="wpcf7-text" type="text" name="name" placeholder="Ваше имя" required>
+                                </span>
+                            </p>
+                            <div class="order-submit-area"> <!-- обертка для создания колонок -->
+                                <p>
+                                    <button class="wpcf7-submit" type="submit">Отправить</button>
+                                    <span class="ajax-loader"></span>
+                                </p>
+                                <div class="review-form-message"> <!-- div лучше параграфа или span, так как к div CF7 не добавляет оберток -->
+                                  Отзыв будет добавлен после проверки модератором
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                    <!-- Досюда код будет удален и заменен на код вставки плагина -->
+                </div>
             </div>
+
+
             <div class="review-wrapper">
                <ul class="review-wrapper-list">
                     <li class="review-wrapper-item">
