@@ -118,7 +118,7 @@ body {
 .page-header__wrapper {
     width: 1100px;
     margin: 0 auto;
-    height: 75px;
+    min-height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,9 +133,11 @@ body {
 .menu-primary-container .menu {
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     margin-top: 5px;
+    row-gap: 10px;
 }
 
 .menu-primary-container .menu-item{
@@ -199,6 +201,10 @@ body {
 
 .menu-primary-container .custom-class-one:active {
     background-color: #FFF7E3;
+}
+
+.menu-primary-container .current-menu-item a {
+  color: #684C05;
 }
 
 /* Секция с формой и отывами */
