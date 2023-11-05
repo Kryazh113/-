@@ -9,27 +9,9 @@ body {
     margin: 0 auto;
   }
 
-  .page-header {
-    background-color: #FFFFFF;
-    width: 100%;
-    border-bottom: 1px solid #F5D581;;
-  }
 
-.page-header-wrapper {
-    width: 1100px;
-    margin: 0 auto;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* main */
 
-.wrapper {
-    width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-bottom: 114px;
-}
 
 .page-main {
     padding: 72px 0;
@@ -98,7 +80,7 @@ body {
 
 /* Шапка */
 
-.page-header-wrapper-logo {
+.page-header__logo {
     text-decoration: none;
     display: grid;
     grid-template-columns: 42px 1fr;
@@ -106,45 +88,117 @@ body {
     column-gap: 18px;
 }
 
-.page-header-wrapper-image{
+.page-header__image{
     width: 42px;
     height: 47px;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 }
 
-.page-header-wrapper-name {
+.page-header__name {
     color: #9F7303;
     letter-spacing: 1.8px;
-    padding: 5px;
+    padding-top: 5px;
 }
 
-.page-header-wrapper-text {
+.page-header__text {
     color: #000;
     font-size: 9px;
     font-weight: 300;
     line-height: 13.5px;
 }
 
-.nav-button {
-    color: #000;
+
+.page-header {
+    background-color: #FFFFFF;
+    width: 100%;
+    border-bottom: 1px solid #F5D581;;
+  }
+
+.page-header__wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-primary-container .menu {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.menu-primary-container .menu-item{
+    padding: 5px;
+}
+
+.menu-primary-container .menu-item-has-children {
+    position: relative;
+    background-image: url(/img/Polygon1.svg);
+    background-repeat: no-repeat;
+    background-position: 93% center;
+}
+
+.menu-primary-container a {
     text-decoration: none;
-    padding: 6px 11px;
+    color: #000000;
+    padding: 10px 20px;
 }
 
-.nav-button:not(:last-child) {
-    margin-right: 18px;
+.menu-primary-container .menu-item-has-children a {
+    padding-right: 26px;
 }
 
-.nav-button_border {
+.menu-primary-container .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+.menu-primary-container .sub-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 5;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(97, 97, 97, 0.18), 0px 2px 4px 0px rgba(97, 97, 97, 0.18);
+    left: 25px;
+    right: -30px;
+    top: 40px;
+    padding: 15px 0;
+}
+
+.menu-primary-container .sub-menu li {
+    margin-bottom: 8px;
+}
+
+.menu-primary-container .sub-menu a {
+    padding-left: 10px;
+}
+
+.menu-primary-container .sub-menu a:hover {
+    color: #9F7303;
+}
+
+.menu-primary-container .custom-class-one {
     border-radius: 8px;
-    border: 1px solid #9F7303;
+    border: 1px solid var(--9-f-7303, #9F7303);
 }
-.nav-button_border:hover {
+
+.menu-primary-container .custom-class-one:hover {
     background-color:#FFFDF8;
 }
-.nav-button_border:active {
-    background-color: #FFF7E3;;
+
+.menu-primary-container .custom-class-one:active {
+    background-color: #FFF7E3;
 }
 
 /* Секция с формой и отывами */
@@ -168,6 +222,10 @@ body {
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 32px;
+}
+
+.review-form p {
+    margin: 0;
 }
 
 .review-form .wpcf7-text{
@@ -214,6 +272,9 @@ body {
 
 
 .review-form .wpcf7-submit {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 18px;
     min-width: 285px;
     min-height: 64px;
     border-radius: 8px;
@@ -262,6 +323,7 @@ body {
     display: grid;
     grid-template-columns: 50px 1fr;
     column-gap: 24px;
+    row-gap: 8px;
 
 }
 
@@ -271,7 +333,7 @@ body {
     background-color: #9F7303;
     border-radius: 50%;
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
     text-indent: -100vw;
     background-size: cover;
     object-fit: cover;
@@ -281,14 +343,14 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
-    grid-column: 2 / -1;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 .review-wrapper-item-content-text {
 font-size: 18px;
 font-weight: 400;
-grid-column: 2 / -1;
-grid-row: 2 / -1;
-margin-bottom: 0;
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+margin: 0;
 }
